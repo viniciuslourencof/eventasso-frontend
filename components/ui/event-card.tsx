@@ -17,7 +17,9 @@ export default function eventCard() {
     return (
         <Card className="w-full">
             <CardHeader>
-                <img className="h-48 w-auto rounded-md" src="festa.jpg" alt="" />
+                <Link href="/event">
+                    <img className="h-48 w-full rounded-md" src="festa.jpg" alt=""></img>
+                </Link>
                 <CardTitle>
                     <Link href="/event">Festa</Link>
                 </CardTitle>
