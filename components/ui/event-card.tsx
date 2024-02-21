@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import { Button } from "@/components/ui/button"
 import {
     Card,
     CardContent,
@@ -9,33 +8,30 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
-import { Bookmark } from "lucide-react"
+import { Calendar, MapPin } from "lucide-react"
 import Link from 'next/link';
 
 export default function eventCard() {
     return (
-        <Card className="w-full">
-            <CardHeader>
-                <Link href="/event">
+        <Link href="/event">
+            <Card className="flex flex-col">
+                <CardHeader>
                     <img className="h-48 w-full rounded-md" src="festa.jpg" alt=""></img>
-                </Link>
-                <CardTitle>
-                    <Link href="/event">Festa</Link>
-                </CardTitle>
-                <CardDescription>Sáb, 01/02/2024 ás 20:00</CardDescription>
-            </CardHeader>
-            <CardContent className="flex flex-col justify-between gap-1">
-                <Label>Rua lorem ipsom dor</Label>
-                <CardDescription>A partir de R$ 10.00</CardDescription>
-                <Label>1.5k confirmados</Label>
-            </CardContent>
-            <CardFooter className="flex justify-between gap-4">
-                <Button className="w-full" variant="secondary">Comparecer</Button>
-                <Button variant="secondary">
-                    <Bookmark className="h-4 w-4" />
-                </Button>
-            </CardFooter>
-        </Card>
+                </CardHeader>
+                <CardContent className="flex flex-col justify-between gap-1">
+                    <CardTitle>Festa</CardTitle>
+                    <div className='flex items-center gap-1'>
+                        <Calendar className='h-4 w-4 text-muted-foreground'></Calendar>
+                        <CardDescription className='text-sm font-semibold text-muted-foreground'>Sáb, 01/02/2024 ás 20:00</CardDescription>
+                    </div>
+                    <div className='flex items-center gap-1'>
+                        <MapPin className='h-4 w-4 text-muted-foreground'></MapPin>
+                        <CardDescription className='text-sm font-semibold text-muted-foreground'>Rua lorem ipsom dor</CardDescription>
+                    </div>                    
+                    <span className='text-sm text-muted-foreground'>A partir de R$ 10.00</span>
+                    <span className='text-sm text-muted-foreground'>1.5k confirmados</span>
+                </CardContent>
+            </Card>
+        </Link>
     )
 }
