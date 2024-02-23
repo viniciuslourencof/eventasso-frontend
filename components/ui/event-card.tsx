@@ -1,5 +1,4 @@
 import * as React from "react"
-
 import {
     Card,
     CardContent,
@@ -16,7 +15,7 @@ export default function eventCard() {
         <Link href="/event">
             <Card className="flex flex-col">
                 <CardHeader>
-                    <img className="h-48 w-full rounded-md" src="festa.jpg" alt=""></img>
+                    <img className="rounded-md" style={{ width: '100%', height: 'auto' }} src="festa2.jpg" alt="" />
                 </CardHeader>
                 <CardContent className="flex flex-col justify-between gap-1">
                     <CardTitle>Festa</CardTitle>

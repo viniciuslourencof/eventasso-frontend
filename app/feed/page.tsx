@@ -62,13 +62,13 @@ export default function Page() {
             </div>
 
             <div className="px-3 flex flex-wrap -mx-2">
-                {[...Array(4)].map((_, index) => (
+                {[...Array(5)].map((_, index) => (
                     <div key={index} className="flex-1 px-2 mb-4">
                         <EventCard />
                     </div>
                 ))}
             </div>
-            <Footer>                
+            <Footer>
             </Footer>
         </>
     )

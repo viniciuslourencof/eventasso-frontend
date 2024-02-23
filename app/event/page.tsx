@@ -6,6 +6,7 @@ import { MapPin, Calendar, Heart, Share } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Separator } from "@/components/ui/separator"
 import { Button } from '@/components/ui/button'
+import Footer from '../../components/ui/footer'
 
 export default function Page() {
   return (
@@ -44,15 +45,15 @@ export default function Page() {
         <Separator className='mt-2'></Separator>
         <h1 className="text-4xl font-semibold leading-none tracking-tight">Festa</h1>
         <p className='text-sm font-semibold text-muted-foreground'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nibh vel lorem facilisis bibendum. Nulla maximus sem eget velit imperdiet, eget porta quam finibus. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse efficitur quis leo vel molestie. Ut sit amet erat tempor, lobortis justo non, fermentum urna. Nunc efficitur blandit justo in iaculis. Nulla sit amet nisi at tortor commodo volutpat at sit amet enim. Donec hendrerit at enim in blandit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nibh vel lorem facilisis bibendum. Nulla maximus sem eget velit imperdiet, eget porta quam finibus. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse efficitur quis leo vel molestie. Ut sit amet erat tempor, lobortis justo non, fermentum urna. Nunc efficitur blandit justo in iaculis. Nulla sit amet nisi at tortor commodo volutpat at sit amet enim. Donec hendrerit at enim in blandit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nibh vel lorem facilisis bibendum. Nulla maximus sem eget velit imperdiet, eget porta quam finibus. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse efficitur quis leo vel molestie. Ut sit amet erat tempor, lobortis justo non, fermentum urna. Nunc efficitur blandit justo in iaculis. Nulla sit amet nisi at tortor commodo volutpat at sit amet enim. Donec hendrerit at enim in blandit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nibh vel lorem facilisis bibendum. Nulla maximus sem eget velit imperdiet, eget porta quam finibus. In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse efficitur quis leo vel molestie. Ut sit amet erat tempor, lobortis justo non, fermentum urna. Nunc efficitur blandit justo in iaculis. Nulla sit amet nisi at tortor commodo volutpat at sit amet enim. Donec hendrerit at enim in blandit.                    
         </p>
+      </div>            
+
+      <div className='fixed bottom-0 left-0 right-0 shadow-md p-4'>
+        <Button className='bg-primary w-full'>Comprar agora</Button>
       </div>
 
-      <div className='fixed bottom-0 left-0 right-0 bg-white shadow-md p-4'>
-        <Button>Finalizar Pedido de R$ 55,00</Button>
-      </div>
+      
     </>
   )
 }

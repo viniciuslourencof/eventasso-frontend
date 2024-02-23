@@ -10,6 +10,7 @@ import {
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
 import { useTheme } from "next-themes"
 import { Separator } from "@/components/ui/separator"
+import Link from 'next/link';
 
 export default function header() {
     const { setTheme } = useTheme()
@@ -17,9 +18,11 @@ export default function header() {
     return (
 
         <>
-            <header className="p-2 flex flex-row justify-between ">
-
-                <Button variant="outline">Eventasso</Button>
+            <header className="p-2 flex flex-row justify-between ">                
+                
+                <Link href="/feed">
+                    <Button variant="outline">Eventasso</Button>
+                </Link>
 
                 <div className="flex flex-row w-min gap-2">
 
