@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
 import { Input } from "@/components/ui/input"
-import Header from '../../components/ui/header'
+import Header from '../../components/ui/Header'
 import Footer from '../../components/ui/footer'
 import DatePicker from '../../components/ui/date-picker'
 import EventCard from '../../components/ui/event-card'
