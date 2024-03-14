@@ -12,7 +12,7 @@ import { useTheme } from "next-themes"
 import { Separator } from "@/components/ui/separator"
 import Link from 'next/link';
 
-export default function header() {
+export default function Header() {
     const { setTheme } = useTheme()
 
     return (

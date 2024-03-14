@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/popover"
 import { Button } from "@/components/ui/button"
 
-export default function datePicker({
+export default function DatePicker({
   className,
 }: React.HTMLAttributes<HTMLDivElement>) {
   const [date, setDate] = React.useState<DateRange | undefined>({
