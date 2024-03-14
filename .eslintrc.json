@@ -1,7 +1,6 @@
 {
   "extends": "next",
   "rules": {
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "react/jsx-pascal-case": "off" // Desabilitar a regra que exige PascalCase para componentes
   }
 }
